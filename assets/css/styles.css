@@ -132,6 +132,10 @@ body.light-theme {
 	--container-color: #fff;
 }
 
+.favicon {
+	border-radius: 50%;
+}
+
 /*========== Variables Dark theme ==========*/
 
 /*========== 
