@@ -28,6 +28,7 @@
 	/*========== Font and typography ==========*/
 	/*.5rem = 8px | 1rem = 16px ...*/
 	--body-font: 'Montserrat', sans-serif;
+	/* --biggest-font-size: 2.5rem; */
 	--bigger-font-size: 2rem;
 	--big-font-size: 1.75rem;
 	--h1-font-size: 1.5rem;
@@ -51,6 +52,7 @@
 /* Responsive typography */
 @media screen and (min-width: 968px) {
 	:root {
+		/* --biggest-font-size: 4.5rem; */
 		--bigger-font-size: 3rem;
 		--big-font-size: 2.5rem;
 		--h1-font-size: 2.25rem;
@@ -287,7 +289,7 @@ body.light-theme {
 .nav__link {
 	color: var(--text-color);
 	font-size: 1rem;
-	/* padding: 0rem; */
+	/* padding: 10rem; */
 	display: flex;
 	border-radius: 5rem;
 }
@@ -305,13 +307,9 @@ body.light-theme {
 /* Active link */
 
 .active-link {
-	background: linear-gradient(
-		180deg,
-		hsla(var(--first-hue), var(--sat), var(--lig), 0.1),
-		hsla(var(--first-hue), var(--sat), var(--lig), 0.2)
-	);
-	box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), 0.4);
-	color: var(--title-color);
+	/* background: var(--text-color); */
+	/* box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), 0.4); */
+	color: var(--first-color);
 }
 
 /* Change background header */
@@ -323,7 +321,6 @@ body.light-theme {
 .home__container {
 	position: relative;
 	row-gap: 4.5rem;
-	padding-top: 2rem;
 }
 
 .home__data {
@@ -332,7 +329,7 @@ body.light-theme {
 
 .home__greeting,
 .home__education {
-	font-size: var(--small-font-size);
+	font-size: var(--h1-font-size);
 	font-weight: var(--font-medium);
 }
 
@@ -348,7 +345,7 @@ body.light-theme {
 }
 
 .home__name {
-	font-size: var(--big-font-size);
+	font-size: var(--bigger-font-size);
 }
 
 .home__img {
@@ -384,7 +381,7 @@ body.light-theme {
 }
 
 .home__social {
-	bottom: 5rem;
+	bottom: -4rem;
 	left: 0;
 	display: grid;
 	row-gap: 0.5rem;
@@ -417,7 +414,7 @@ body.light-theme {
 .home__scroll {
 	color: var(--first-color);
 	right: -1.5rem;
-	bottom: 4rem;
+	bottom: -3rem;
 	display: grid;
 	row-gap: 2.25rem;
 	justify-items: center;
