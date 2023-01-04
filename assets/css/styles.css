@@ -18,7 +18,7 @@
 	--lig: 75%;
 	--second-hue: 219;
 	--first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-	--first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
+	--first-color-alt: hsl(var(--first-hue), var(--sat), 58%); /* -4% */
 	--title-color: hsl(var(--second-hue), 15%, 95%);
 	--text-color: hsl(var(--second-hue), 8%, 75%);
 	--text-color-light: hsl(var(--second-hue), 4%, 55%);
@@ -160,13 +160,11 @@ body.light-theme {
 	box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, 0.1);
 }
 
-.light-theme .home__social::after,
 .light-theme .footer__social-link {
 	background-color: var(--title-color);
 }
 
-.light-theme .home__social-link,
-.light-theme .home__scroll,
+.light-theme .home__education,
 .light-theme .button,
 .light-theme .button:hover,
 .light-theme .active-work,
@@ -215,7 +213,7 @@ body.light-theme {
 }
 
 .section {
-	padding: 4.5rem 0 1rem;
+	padding: 5rem 0 1rem;
 }
 
 .section__title,
@@ -224,7 +222,7 @@ body.light-theme {
 }
 
 .section__title {
-	font-size: var(--h2-font-size);
+	font-size: var(--h1-font-size);
 	color: var(--first-color);
 	margin-bottom: 2rem;
 }
@@ -288,8 +286,8 @@ body.light-theme {
 
 .nav__link {
 	color: var(--text-color);
-	font-size: 1rem;
-	/* padding: 10rem; */
+	font-size: 1.3rem;
+	padding: 0rem;
 	display: flex;
 	border-radius: 5rem;
 }
@@ -300,7 +298,7 @@ body.light-theme {
 	align-items: center;
 }
 .nav__item p {
-	font-size: var(--tiny-font-size);
+	font-size: var(--smaller-font-size);
 	color: var(--text-color);
 }
 
@@ -356,11 +354,11 @@ body.light-theme {
 	justify-self: center;
 	width: 190px;
 	height: 293px;
-	background: linear-gradient(
+	/* background: linear-gradient(
 		180deg,
 		hsla(var(--first-hue), var(--sat), var(--lig), 0.1),
 		hsla(var(--first-hue), var(--sat), var(--lig), 0.2)
-	);
+	); */
 	border-radius: 10rem 10rem 1rem 1rem;
 	display: flex;
 	align-items: flex-end;
@@ -414,7 +412,7 @@ body.light-theme {
 .home__scroll {
 	color: var(--first-color);
 	right: -1.5rem;
-	bottom: -3rem;
+	bottom: -1rem;
 	display: grid;
 	row-gap: 2.25rem;
 	justify-items: center;
@@ -449,7 +447,7 @@ body.light-theme {
 .button--ghost {
 	background-color: transparent;
 	border: 2px solid var(--first-color);
-	color: var(--first-color);
+	color: var(--text-color);
 }
 
 /*=============== ABOUT ===============*/
@@ -495,6 +493,7 @@ body.light-theme {
 
 .about__description {
 	margin-bottom: 2rem;
+	line-height: 1.5rem;
 }
 
 /*=============== SKILLS ===============*/
@@ -551,9 +550,113 @@ body.light-theme {
 
 /*=============== SERVICES ===============*/
 
+.services__container {
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5rem;
+	padding-top: 1rem;
+}
+
+.services__card {
+	background-color: var(--container-color);
+	padding: 3rem 1.5rem 1.5rem;
+	border-radius: 1rem;
+}
+
+.services__title {
+	font-size: var(--h3-font-size);
+	margin-bottom: 2.5rem;
+}
+
+.services__button {
+	color: var(--first-color);
+	font-size: var(--small-font-size);
+	display: flex;
+	align-items: center;
+	column-gap: 0.25rem;
+	cursor: pointer;
+}
+
+.services__button:hover .services__icon {
+	transform: translateX(0.25rem);
+}
+
+.services__icon {
+	font-size: 1rem;
+	transition: 0.4s;
+}
+
 /* Services modal */
+.services__modal {
+	position: fixed;
+	inset: 0;
+	background-color: hsla(var(--second-hue), 28%, 16%, 0.7);
+	padding: 2rem 1rem;
+	display: grid;
+	place-items: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.4s;
+	z-index: var(--z-modal);
+}
+
+.services__modal-content {
+	position: relative;
+	background-color: var(--body-color);
+	padding: 4.5rem 1.5rem 2.5rem;
+	border-radius: 1.5rem;
+}
+
+.services__modal-title,
+.services__modal-description {
+	text-align: center;
+}
+
+.services__modal-title {
+	font-size: var(--h3-font-size);
+	color: var(--first-color);
+	margin-bottom: 1rem;
+}
+
+.services__modal-description {
+	font-size: var(--small-font-size);
+	margin-bottom: 2rem;
+}
+
+.services__modal-list {
+	display: grid;
+	row-gap: 0.75rem;
+}
+
+.services__modal-item {
+	display: flex;
+	align-items: flex-start;
+	column-gap: 0.5rem;
+}
+
+.services__modal-icon {
+	font-size: 1.5rem;
+	color: var(--first-color);
+}
+
+.services__modal-info {
+	font-size: var(--small-font-size);
+}
+
+.services__modal-close {
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+	font-size: 1.5rem;
+	color: var(--first-color);
+	cursor: pointer;
+}
 
 /*Active modal*/
+
+.active-modal {
+	opacity: 1;
+	visibility: visible;
+}
 
 /*=============== WORK ===============*/
 
@@ -582,11 +685,23 @@ body.light-theme {
 	background-color: var(--container-color);
 	padding: 1rem;
 	border-radius: 1rem;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+}
+/* .left__work__card {
+	width: 50%;
 }
 
-.work__img {
-	border-radius: 1rem;
+.right__work__card {
+	width: 50%;
+} */
+
+.work__card img {
+	border-radius: 0.5rem;
 	margin-bottom: 0.75rem;
+	width: 18rem;
+	height: 16rem;
 }
 
 .work__title {
@@ -611,6 +726,10 @@ body.light-theme {
 .work__icon {
 	font-size: 1rem;
 	transition: 0.4s;
+}
+
+.liveSiteGithubContainer {
+	display: flex;
 }
 
 /* Active item work*/
@@ -773,7 +892,7 @@ body.light-theme {
 
 .footer__copy {
 	display: block;
-	margin-top: 4.5rem;
+	margin-top: 1.5rem;
 	color: var(--container-color);
 	text-align: center;
 	font-size: var(--smaller-font-size);
@@ -796,7 +915,7 @@ body.light-theme {
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For small devices */
+/* For mobile / small devices */
 @media screen and (max-width: 320px) {
 	.nav__menu {
 		padding: 1rem 1.5rem;
@@ -804,6 +923,11 @@ body.light-theme {
 
 	.home__buttons {
 		flex-direction: column;
+	}
+
+	.home .button,
+	.button-download {
+		font-size: var(--smaller-font-size);
 	}
 
 	.home__handle {
@@ -836,11 +960,11 @@ body.light-theme {
 	}
 }
 
-/* For medium devices */
+/* For tablet / medium devices */
 
 @media screen and (min-width: 576px) {
 	.nav__menu {
-		width: 328px;
+		width: 576px;
 		left: 0;
 		right: 0;
 		margin: 0 auto;
@@ -892,7 +1016,7 @@ body.light-theme {
 		column-gap: 3rem;
 	}
 }
-/* For large devices */
+/* For desktop / large devices */
 @media screen and (min-width: 992px) {
 	.container {
 		margin-left: auto;
@@ -904,7 +1028,7 @@ body.light-theme {
 	}
 
 	.section__title {
-		margin-bottom: 3.5rem;
+		/* margin-bottom: 3.5rem; */
 	}
 
 	.nav {

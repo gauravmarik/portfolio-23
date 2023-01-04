@@ -48,6 +48,13 @@
 								<a href="#skills"><p>Skills</p></a>
 							</a>
 						</li>
+
+						<!-- <li class="nav__item">
+							<a href="#services" class="nav__link">
+								<i class="bx bx-book"></i>
+								<a href="#skills"><p>Services</p></a>
+							</a>
+						</li> -->
 						<li class="nav__item">
 							<a href="#work" class="nav__link">
 								<i class="bx bx-briefcase"></i>
@@ -89,13 +96,10 @@
 						</div>
 
 						<div class="home__buttons">
-							<a
-								download=""
-								href="assets/pdf/Ansel-Cv.pdf"
-								class="button button-skills"
+							<a download="" href="#skills" class="button button-skills"
 								>Skills</a
 							>
-							<a href="#about" class="button button--ghost button-work"
+							<a href="#work" class="button button--ghost button-work"
 								>Work / Projects</a
 							>
 						</div>
@@ -103,11 +107,11 @@
 						<div class="home__buttons">
 							<a
 								download=""
-								href="assets/pdf/Ansel-Cv.pdf"
+								href="#skills"
 								class="button button--ghost button-services"
 								>Services</a
 							>
-							<a href="#about" class="button button-contact">Contact</a>
+							<a href="#contact" class="button button-contact">Contact</a>
 						</div>
 					</div>
 
@@ -130,13 +134,23 @@
 						>
 							<i class="bx bxl-github"></i>
 						</a>
+
 						<a
-							href="https://dribbble.com/"
+							href="mailto:gaurav.marik@gmail.com"
+							target="_blank"
+							class="home__social-link"
+						>
+							<i class="bx bx-envelope"></i>
+							<!-- <i class="bx bx-right-arrow-alt contact__button-icon"></i> -->
+						</a>
+
+						<!-- <a
+							href="gaurav.marik@gmail.com"
 							target="_blank"
 							class="home__social-link"
 						>
 							<i class="bx bxl-dribbble"></i>
-						</a>
+						</a> -->
 					</div>
 					<a href="#about" class="home__scroll">
 						<i class="bx bx-mouse home__scroll-icon"></i>
@@ -151,47 +165,45 @@
 				<h2 class="section__title">About</h2>
 
 				<div class="about__container container grid">
-					<img src="assets/img/myPhoto.jpeg" alt="" class="about__img" />
+					<img src="assets/img/myPhoto1.jpeg" alt="" class="about__img" />
 
 					<div class="about__data">
-						<div class="about__info">
-							<div class="about__box">
-								<i class="bx bx-award about__icon"></i>
-								<h3 class="about__title">Experience</h3>
-								<span class="about__subtitle">8 Years Working</span>
-							</div>
-							<div class="about__box">
-								<i class="bx bx-briefcase-alt about__icon"></i>
-								<h3 class="about__title">Completed</h3>
-								<span class="about__subtitle">48 + Projects</span>
-							</div>
-							<div class="about__box">
-								<div class="bx bx-support abut__icon"></div>
-								<h3 class="about__title">Support</h3>
-								<span class="about__subtitle">Online 24/7</span>
-							</div>
-						</div>
 						<p class="about__description">
-							Frontend developer, I create web pages with UI / UX user
-							interface, I have years of experience and many clients are happy
-							with the projects carried out.
+							I am a full stack developer based out of Toronto with a passion
+							for building responsive, accessible and clean design. I stay
+							curious in my continued learning. I make an impact with my work,
+							using my background in law and client service to bring ideas to
+							life in a meaningful way.
 						</p>
-						<a href="" class="button">Contact Me</a>
+						<p class="about__description">
+							I enjoy being part of every stage of development from planning to
+							building, debugging and deployment. Envisioning technology that
+							can improve and streamline the lives and businesses of its users
+							is what inspires me the most.
+						</p>
+						<a href="" class="button">Lets Chat!</a>
 					</div>
 				</div>
 			</section>
 
 			<!--=============== SKILLS ===============-->
 			<section class="skills section" id="skills">
-				<span class="section__subtitle">My abilities</span>
-				<h2 class="section__title">My Experience</h2>
+				<h2 class="section__title">Skills</h2>
+				<!-- <span class="section__subtitle">My Experience / Training</span> -->
 
 				<div class="skills__container container grid">
 					<div class="skills__content">
-						<h3 class="skills__title">Full Stack developer</h3>
+						<h3 class="skills__title">Frontend developer</h3>
 
 						<div class="skills__box">
 							<div class="skills__group">
+								<div class="skills__data">
+									<i class="bx bx-check-circle"></i>
+									<div>
+										<h3 class="skills__name">UI/UX Design</h3>
+										<span class="skills__level">Intermediate</span>
+									</div>
+								</div>
 								<div class="skills__data">
 									<i class="bx bx-check-circle"></i>
 									<div>
@@ -201,7 +213,6 @@
 								</div>
 								<div class="skills__data">
 									<i class="bx bx-check-circle"></i>
-
 									<div>
 										<h3 class="skills__name">CSS</h3>
 										<span class="skills__level">Advanced</span>
@@ -242,6 +253,15 @@
 										<span class="skills__level">Intermediate</span>
 									</div>
 								</div>
+
+								<div class="skills__data">
+									<i class="bx bx-check-circle"></i>
+
+									<div>
+										<h3 class="skills__name">Angular</h3>
+										<span class="skills__level">Intermediate</span>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -254,14 +274,14 @@
 								<div class="skills__data">
 									<i class="bx bx-check-circle"></i>
 									<div>
-										<h3 class="skills__name">PHP</h3>
+										<h3 class="skills__name">NodeJS</h3>
 										<span class="skills__level">Intermediate</span>
 									</div>
 								</div>
 								<div class="skills__data">
 									<i class="bx bx-check-circle"></i>
 									<div>
-										<h3 class="skills__name">Node Js</h3>
+										<h3 class="skills__name">ExpressJS</h3>
 										<span class="skills__level">Basic</span>
 									</div>
 								</div>
@@ -272,14 +292,29 @@
 										<span class="skills__level">Intermediate</span>
 									</div>
 								</div>
+								<div class="skills__data">
+									<i class="bx bx-check-circle"></i>
+									<div>
+										<h3 class="skills__name">AWS</h3>
+										<span class="skills__level">Intermediate</span>
+									</div>
+								</div>
 							</div>
 
 							<div class="skills__group">
 								<div class="skills__data">
 									<i class="bx bx-check-circle"></i>
 									<div>
-										<h3 class="skills__name">MySQL</h3>
-										<span class="skills__level">Basic</span>
+										<h3 class="skills__name">REST API</h3>
+										<span class="skills__level">Intermediate</span>
+									</div>
+								</div>
+
+								<div class="skills__data">
+									<i class="bx bx-check-circle"></i>
+									<div>
+										<h3 class="skills__name">NoSQL Database</h3>
+										<span class="skills__level">Intermediate</span>
 									</div>
 								</div>
 								<div class="skills__data">
@@ -302,86 +337,324 @@
 				</div>
 			</section>
 
-			<!--=============== SERVICES ===============-->
-			<section class="services section"></section>
+			<!-- =============== SERVICES ===============-->
+			<!-- <section class="services section">
+				<h2 class="section__title">Services</h2>
+				<span class="section__subtitle">What I offer</span>
 
+				<div class="services__container container grid">
+					<div class="services__card">
+						<h3 class="services__title">
+							Product <br />
+							Designer
+						</h3>
+						<span class="services__button">
+							See more <i class="bx bx-right-arrow-alt services__icon"></i>
+						</span>
+
+						<div class="services__modal">
+							<div class="services__modal-content">
+								<i class="bx bx-x services__modal-close"></i>
+								<h3 class="services__modal-title">Product Designer</h3>
+								<p class="services__modal-description">
+									Service with more than 3 years of experience. 
+									Providing quality work to clients and companies.
+								</p>
+								<ul class="services__modal-list">
+									<li class="services__modal-item">
+										<i class="bx bx-check services__modal-icon"></i>
+										<p class="services__modal-info">
+											I develop the user interface.	
+									
+										</p>
+									</li>
+									<li class="services__modal-item">
+										<i class="bx bx-check services__modal-icon"></i>
+										<p class="services__modal-info">
+											Web page development.
+										</p>
+									</li>
+									<li class="services__modal-item">
+										<i class="bx bx-check services__modal-icon"></i>
+										<p class="services__modal-info">
+											I create ux element interactions.
+										</p>
+									</li>
+									<li class="services__modal-item">
+										<i class="bx bx-check services__modal-icon"></i>
+										<p class="services__modal-info">
+											I position your company brand.
+										</p>
+									</li>
+									<li class="services__modal-item">
+										<i class="bx bx-check services__modal-icon"></i>
+										<p class="services__modal-info">
+											Design and mockups of products for companies.
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="services__card">
+						<h3 class="services__title">
+							Ui/Ux <br />
+							Designer
+						</h3>
+						<span class="services__button">
+							See more <i class="bx bx-right-arrow-alt services__icon"></i>
+						</span>
+
+						<div class="services__modal">
+							<div class="services__modal-content">
+								<i class="bx bx-x services__modal-close"></i>
+								<h3 class="services__modal-title">Ui/Ux Designer</h3>
+								<p class="services__modal-description">
+									Service with more than 3 years of experience. 
+									Providing quality work to clients and companies.
+								</p>
+								<ul class="services__modal-list">
+									<li class="services__modal-item">
+										<i class="bx bx-check services__modal-icon"></i>
+										<p class="services__modal-info">
+											I develop the user interface.	
+									
+										</p>
+									</li>
+									<li class="services__modal-item">
+										<i class="bx bx-check services__modal-icon"></i>
+										<p class="services__modal-info">
+											Web page development.
+										</p>
+									</li>
+									<li class="services__modal-item">
+										<i class="bx bx-check services__modal-icon"></i>
+										<p class="services__modal-info">
+											I create ux element interactions.
+										</p>
+									</li>
+									<li class="services__modal-item">
+										<i class="bx bx-check services__modal-icon"></i>
+										<p class="services__modal-info">
+											I position your company brand.
+										</p>
+									</li>
+									<li class="services__modal-item">
+										<i class="bx bx-check services__modal-icon"></i>
+										<p class="services__modal-info">
+											Design and mockups of products for companies.
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="services__card">
+						<h3 class="services__title"/>Visual <br> Designer </br> </h3>
+						<span class="services__button">
+							See more <i class="bx bx-right-arrow-alt services__icon"></i>
+						</span>
+
+						<div class="services__modal">
+							<div class="services__modal-content">
+								<i class="bx bx-x services__modal-close"></i>
+								<h3 class="services__modal-title">Visual Designer</h3>
+								<p class="services__modal-description">
+									Service with more than 3 years of experience. 
+									Providing quality work to clients and companies.
+								</p>
+								<ul class="services__modal-list">
+									<li class="services__modal-item">
+										<i class="bx bx-check services__modal-icon"></i>
+										<p class="services__modal-info">
+											I develop the user interface.	
+									
+										</p>
+									</li>
+									<li class="services__modal-item">
+										<i class="bx bx-check services__modal-icon"></i>
+										<p class="services__modal-info">
+											Web page development.
+										</p>
+									</li>
+									<li class="services__modal-item">
+										<i class="bx bx-check services__modal-icon"></i>
+										<p class="services__modal-info">
+											I create ux element interactions.
+										</p>
+									</li>
+									<li class="services__modal-item">
+										<i class="bx bx-check services__modal-icon"></i>
+										<p class="services__modal-info">
+											I position your company brand.
+										</p>
+									</li>
+									<li class="services__modal-item">
+										<i class="bx bx-check services__modal-icon"></i>
+										<p class="services__modal-info">
+											Design and mockups of products for companies.
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> -->
 			<!--=============== WORK ===============-->
 			<section class="work section" id="work">
-				<span class="section__subtitle">My Portfolio</span>
-				<h2 class="section__title">Recent Works</h2>
+				<!-- <span class="section__subtitle">Recent Works</span> -->
+				<h2 class="section__title">Portfolio</h2>
 
-				<div class="work__filters">
+				<!-- <div class="work__filters">
 					<span class="work__item active-work">All</span>
 					<span class="work__item">Web</span>
 					<span class="work__item">Movil</span>
 					<span class="work__item">Design</span>
-				</div>
+				</div> -->
 
 				<div class="work__container container grid">
 					<div class="work__card">
-						<img src="assets/img/work1.jpg" alt="" class="work__img" />
-						<h3 class="work__title">Web Design</h3>
-						<a href="#" class="work__button"></a>
-						Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+						<img src="assets/img/trackCrypto5.png" alt="" class="work__img" />
+						<h3 class="work__title">Track Crypto</h3>
+						<div class="liveSiteGithubContainer">
+							<a
+								href="https://track-crypto-13d5b.web.app"
+								class="work__button"
+								target="_blank"
+								>Live Site |
+							</a>
+
+							<a
+								href="https://github.com/gauravmarik/track-crypto"
+								class="work__button"
+								target="_blank"
+							>
+								| GitHub</a
+							>
+						</div>
 					</div>
+
 					<div class="work__card">
-						<img src="assets/img/work2.jpg" alt="" class="work__img" />
-						<h3 class="work__title">App Movil</h3>
-						<a href="#" class="work__button"></a>
-						Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+						<img src="assets/img/RideX.png" alt="" class="work__img" />
+						<h3 class="work__title">RideX</h3>
+						<div class="liveSiteGithubContainer">
+							<a
+								href="https://ride-x.netlify.app/"
+								class="work__button"
+								target="_blank"
+								>Live Site |
+							</a>
+
+							<a
+								href="https://github.com/gauravmarik/RideX"
+								class="work__button"
+								target="_blank"
+							>
+								| GitHub</a
+							>
+						</div>
 					</div>
+
 					<div class="work__card">
-						<img src="assets/img/work3.jpg" alt="" class="work__img" />
-						<h3 class="work__title">Brand Design</h3>
-						<a href="#" class="work__button"></a>
-						Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+						<img src="assets/img/MovieNight.jpeg" alt="" class="work__img" />
+						<h3 class="work__title">Movie Night</h3>
+						<div class="liveSiteGithubContainer">
+							<a
+								href="https://movie-night-app.netlify.app/"
+								class="work__button"
+								target="_blank"
+								>Live Site |
+							</a>
+
+							<a
+								href="https://github.com/gauravmarik/movieNightApp/"
+								class="work__button"
+								target="_blank"
+							>
+								| GitHub</a
+							>
+						</div>
 					</div>
+
 					<div class="work__card">
-						<img src="assets/img/work4.jpg" alt="" class="work__img" />
-						<h3 class="work__title">Web Design</h3>
-						<a href="#" class="work__button"></a>
-						Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+						<img
+							src="assets/img/AgencyLandingPage.png"
+							alt=""
+							class="work__img"
+						/>
+						<h3 class="work__title">Agency Landing Page</h3>
+						<div class="liveSiteGithubContainer">
+							<a
+								href="https://agencylandingpage.netlify.app/"
+								class="work__button"
+								target="_blank"
+								>Live Site |
+							</a>
+
+							<a
+								href="https://github.com/gauravmarik/agencyLandingPage25Feb22"
+								class="work__button"
+								target="_blank"
+							>
+								| GitHub</a
+							>
+						</div>
 					</div>
+
 					<div class="work__card">
-						<img src="assets/img/work5.jpg" alt="" class="work__img" />
-						<h3 class="work__title">App Movil</h3>
-						<a href="#" class="work__button"></a>
-						Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+						<img src="assets/img/wordle2.png" alt="" class="work__img" />
+						<h3 class="work__title">Wordle Game</h3>
+						<div class="liveSiteGithubContainer">
+							<a
+								href="https://wordle110322.netlify.app/"
+								class="work__button"
+								target="_blank"
+								>Live Site |
+							</a>
+
+							<a
+								href="https://github.com/gauravmarik/wordleGame"
+								class="work__button"
+								target="_blank"
+							>
+								| GitHub</a
+							>
+						</div>
 					</div>
 				</div>
 			</section>
 
-			<!--=============== TESTIMONIALS ===============-->
-			<section class="testimonial section"></section>
-
 			<!--=============== CONTACT ===============-->
 			<section class="contact section" id="contact">
-				<span class="section__subtitle">Get in touch</span>
-				<h2 class="section__title">Contact Me</h2>
+				<h2 class="section__title">Contact</h2>
+				<!-- <span class="section__subtitle">Get in touch</span> -->
 
 				<div class="contact__container container grid">
 					<div class="contact__content">
-						<h3 class="contact__title">Talk to me</h3>
+						<!-- <h3 class="contact__title">Talk to me</h3> -->
 
 						<div class="contact__info">
 							<div class="contact__card">
-								<i class="bx bx-mail-send contact__card-icon"></i>
+								<i class="bx bx-envelope contact__card-icon"></i>
 								<h3 class="contact__card-title">Email</h3>
-								<span class="contact__card-data">user@gmail.com</span>
+								<span class="contact__card-data">gaurav.marik@gmail.com</span>
 
 								<a
-									href="mailto:examplemail@correo.com"
+									href="mailto:gaurav.marik@gmail.com"
 									target="_blank"
 									class="contact__button"
 								>
-									Write to me
+									Write me
 									<i class="bx bx-right-arrow-alt contact__button-icon"></i>
 								</a>
 							</div>
 						</div>
 					</div>
 					<div class="contact__content">
-						<h3 class="contact__title">Write me your project</h3>
+						<!-- <h3 class="contact__title">Write me your project</h3> -->
 						<form action="" class="contact__form">
 							<div class="contact__form-div">
 								<label for="" class="contact__form-tag">Name</label>
