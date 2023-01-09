@@ -396,7 +396,7 @@ body.light-theme {
 	transition: 0.4s;
 }
 
-.home-social-link:hover {
+.home__social-link:hover {
 	background-color: var(--first-color);
 	color: #fff;
 }

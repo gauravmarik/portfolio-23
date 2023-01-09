@@ -31,12 +31,6 @@ modalClose.forEach((mc) => {
 	})
 })
 
-/*=============== MIXITUP FILTER PORTFOLIO ===============*/
-
-/* Link active work */
-
-/*=============== SWIPER TESTIMONIAL ===============*/
-
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
 
