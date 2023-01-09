@@ -18,7 +18,7 @@
 	--lig: 75%;
 	--second-hue: 219;
 	--first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-	--first-color-alt: hsl(var(--first-hue), var(--sat), 58%); /* -4% */
+	--first-color-alt: hsl(var(--first-hue), var(--sat), 63%); /* -4% */
 	--title-color: hsl(var(--second-hue), 15%, 95%);
 	--text-color: hsl(var(--second-hue), 8%, 75%);
 	--text-color-light: hsl(var(--second-hue), 4%, 55%);
@@ -379,7 +379,7 @@ body.light-theme {
 }
 
 .home__social {
-	bottom: -4rem;
+	bottom: 7rem;
 	left: 0;
 	display: grid;
 	row-gap: 0.5rem;
@@ -412,7 +412,7 @@ body.light-theme {
 .home__scroll {
 	color: var(--first-color);
 	right: -1.5rem;
-	bottom: -1rem;
+	bottom: -2rem;
 	display: grid;
 	row-gap: 2.25rem;
 	justify-items: center;
@@ -441,6 +441,7 @@ body.light-theme {
 
 .button:hover {
 	background-color: var(--first-color-alt);
+
 	column-rule: var(--body-color);
 }
 
