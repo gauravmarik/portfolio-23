@@ -99,6 +99,8 @@ const sr = ScrollReveal({
 	// reset true
 })
 
-sr.reveal(`.home__data`)
-sr.reveal(`.home__handle`, { delay: 700 })
-sr.reveal(`.home__social, .home__scroll`), { delay: 900, origin: 'bottom' }
+sr.reveal(
+	`.home__data, .about img, .about__data, .skills__container, .work__card, .contact__content, footer__container`
+)
+// sr.reveal(`.home__handle`, { delay: 700 })
+// sr.reveal(`.home__social, .home__scroll`), { delay: 900, origin: 'bottom' }
