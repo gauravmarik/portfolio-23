@@ -11,11 +11,14 @@
         Purple: hsl(250, 66%, 75%)
         Blue: hsl(207, 90%, 72%)
         Pink: hsl(356, 66%, 75%)
+
+        Orange: hsl(376, 66%, 55%)
+
         Teal: hsl(174, 63%, 62%)
   */
-	--first-hue: 356;
+	--first-hue: 386;
 	--sat: 66%;
-	--lig: 75%;
+	--lig: 55%;
 	--second-hue: 219;
 	--first-color: hsl(var(--first-hue), var(--sat), var(--lig));
 	--first-color-alt: hsl(var(--first-hue), var(--sat), 63%); /* -4% */
@@ -379,7 +382,7 @@ body.light-theme {
 }
 
 .home__social {
-	bottom: 7rem;
+	bottom: -4rem;
 	left: 0;
 	display: grid;
 	row-gap: 0.5rem;
@@ -412,7 +415,7 @@ body.light-theme {
 .home__scroll {
 	color: var(--first-color);
 	right: -1.5rem;
-	bottom: -2rem;
+	bottom: -4rem;
 	display: grid;
 	row-gap: 2.25rem;
 	justify-items: center;
@@ -665,14 +668,14 @@ body.light-theme {
 	padding-top: 1rem;
 }
 
-.work__filters {
+/* .work__filters {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	column-gap: 0.75rem;
 	margin-bottom: 2rem;
-}
-
+} */
+/* 
 .work__item {
 	cursor: pointer;
 	color: var(--title-color);
@@ -680,7 +683,7 @@ body.light-theme {
 	font-weight: var(--font-medium);
 	border-radius: var(--font-medium);
 	border-radius: 0.5rem;
-}
+} */
 
 .work__card {
 	background-color: var(--container-color);
@@ -692,21 +695,28 @@ body.light-theme {
 }
 /* .left__work__card {
 	width: 50%;
-}
+} */
 
-.right__work__card {
+/* .right__work__card {
 	width: 50%;
 } */
+
+.work__card p {
+	font-size: var(--normal-font-size);
+	max-width: 20rem;
+	/* height: 18rem; */
+	padding-top: 0.7rem;
+}
 
 .work__card img {
 	border-radius: 0.5rem;
 	margin-bottom: 0.75rem;
-	width: 18rem;
-	height: 16rem;
+	width: 20rem;
+	height: 18rem;
 }
 
 .work__title {
-	font-size: var(--normal-font-size);
+	font-size: var(--h3-font-size);
 	font-weight: var(--font-medium);
 	margin-bottom: 0.25rem;
 }
@@ -714,7 +724,7 @@ body.light-theme {
 .work__button {
 	width: max-content;
 	color: var(--first-color);
-	font-size: var(--small-font-size);
+	font-size: var(--normal-font-size);
 	display: flex;
 	align-items: center;
 	column-gap: 0.25rem;
@@ -738,10 +748,6 @@ body.light-theme {
 	background-color: var(--first-color);
 	color: var(--body-color);
 }
-
-/*=============== TESTIMONIAL ===============*/
-
-/* Swiper class */
 
 /*=============== CONTACT ===============*/
 .contact__container {
@@ -930,6 +936,9 @@ body.light-theme {
 	.button-download {
 		font-size: var(--smaller-font-size);
 	}
+	/* .button-download {
+		font-size: var(--tiny-font-size);
+	} */
 
 	.home__handle {
 		width: 150px;
@@ -970,6 +979,9 @@ body.light-theme {
 		right: 0;
 		margin: 0 auto;
 	}
+	/* .button-download {
+		font-size: var(--tiny-font-size);
+	} */
 
 	.about__info {
 		grid-template-columns: repeat(3, 140px);
