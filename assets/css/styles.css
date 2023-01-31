@@ -10,18 +10,19 @@
 	/*
         Purple: hsl(250, 66%, 75%)
         Blue: hsl(207, 90%, 72%)
+		Blue(like in Resume/CL): hsl(218, 72%, 62%)
         Pink: hsl(356, 66%, 75%)
 
         Orange: hsl(376, 66%, 55%)
 
         Teal: hsl(174, 63%, 62%)
   */
-	--first-hue: 386;
-	--sat: 66%;
-	--lig: 55%;
+	--first-hue: 218;
+	--sat: 72%;
+	--lig: 62%;
 	--second-hue: 219;
 	--first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-	--first-color-alt: hsl(var(--first-hue), var(--sat), 63%); /* -4% */
+	--first-color-alt: hsl(var(--first-hue), var(--sat), 43%); /* -4% */
 	--title-color: hsl(var(--second-hue), 15%, 95%);
 	--text-color: hsl(var(--second-hue), 8%, 75%);
 	--text-color-light: hsl(var(--second-hue), 4%, 55%);
@@ -928,16 +929,17 @@ body.light-theme {
 		padding: 1rem 1.5rem;
 	}
 
-	.home__buttons {
-		flex-direction: column;
-	}
-
 	.home .button,
 	.button-download {
+		/* width: 25rem;
+		max-width: 25rem;
+		display: block; */
 		font-size: var(--smaller-font-size);
 	}
-	/* .button-download {
-		font-size: var(--tiny-font-size);
+
+	/* .home__buttons .button {
+		width: 25rem;
+		padding: 0 10rem 0 10rem;
 	} */
 
 	.home__handle {
