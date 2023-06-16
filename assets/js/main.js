@@ -1,4 +1,4 @@
-/*=============== CHANGE BACKGROUND HEADER ===============*/
+/* CHANGE BACKGROUND HEADER */
 const scrollHeader = () => {
 	const header = document.getElementById('header')
 	// When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
@@ -8,7 +8,7 @@ const scrollHeader = () => {
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*=============== SERVICES MODAL ===============*/
+/* SERVICES MODAL */
 const modalViews = document.querySelectorAll('.services__modal'),
 	modalBtns = document.querySelectorAll('.services__button'),
 	modalClose = document.querySelectorAll('.services__modal-close')
@@ -31,7 +31,7 @@ modalClose.forEach((mc) => {
 	})
 })
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+/* SCROLL SECTIONS ACTIVE LINK */
 const sections = document.querySelectorAll('section[id]')
 
 const scrollActive = () => {
@@ -54,7 +54,7 @@ const scrollActive = () => {
 }
 window.addEventListener('scroll', scrollActive)
 
-/*=============== LIGHT DARK THEME ===============*/
+/* LIGHT DARK THEME */
 const themeButton = document.getElementById('theme-button')
 const lightTheme = 'light-theme'
 const iconTheme = 'bx-sun'
@@ -89,7 +89,7 @@ themeButton.addEventListener('click', () => {
 	localStorage.setItem('selected-theme', getCurrentTheme())
 	localStorage.setItem('selected-icon', getCurrentIcon())
 })
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+/* SCROLL REVEAL ANIMATION */
 
 const sr = ScrollReveal({
 	origin: 'top',
